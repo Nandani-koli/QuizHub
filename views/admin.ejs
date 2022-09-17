@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<%- include('includes/header'); %> 
+<html lang="en">
+
+<body class="d-flex flex-column min-vh-100">
+      
+
+    <!-- Main content  -->
+    <div class="container-md">
+        <p class="h1 text-center">WELCOME</p>
+        <img src="/images/admin.jpg" class="rounded mx-auto d-block" alt="...">
+
+        <div class="row m-5 text-center">
+            <div class="col-6">
+                <a href="/admin/create-quiz"><button class="btn btn-outline-primary" type="submit">Create
+                        Quiz</button></a>
+            </div>
+            <div class="col-6">
+                <a href="/admin/previous-quizzes"><button class="btn btn-outline-primary" type="submit">Previous
+                        Quizzes</button></a>
+            </div>
+        </div>
+
+    </div>
+
+    <%- include('includes/footer'); %> 
+
+</body>
+
+</html>

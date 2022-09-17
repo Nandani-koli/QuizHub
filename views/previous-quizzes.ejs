@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('includes/header'); %> 
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- main content  -->
+    <div class="m-2 text-center">
+        <p class="h2">Previous Quizzes</p>
+    </div>
+    <div class="container-md bg-light text-white shadow-lg p-5 rounded">
+
+        <% allquizname.forEach(qname => { %>
+        <div class="row my-2">
+            <div class="col">
+                <p class="h4 text-black"><%= qname.quizname %></p>
+            </div>
+            <div class="col">
+                <a href="/admin/previous-quizzes/Result"><button type="button" class="btn btn-success btn-md">Result</button></a>
+            </div>
+        </div>
+         
+        <% }) %>
+
+    </div>
+
+     <!-- main content  -->
+
+
+     <%- include('includes/footer'); %> 
+
+</body>
+
+</html> 
